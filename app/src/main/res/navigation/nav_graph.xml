@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/weatherListFragment">
+
+    <action
+        android:id="@+id/action_home"
+        app:destination="@id/weatherListFragment" />
+
+    <fragment
+        android:id="@+id/weatherListFragment"
+        android:name="com.example.weather_test.ui.WeatherListFragment"
+        android:label="WeatherListFragment" >
+        <action
+            android:id="@+id/action_weatherListFragment_to_weatherDetailFragment"
+            app:destination="@id/weatherDetailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/weatherDetailFragment"
+        android:name="com.example.weather_test.ui.WeatherDetailFragment"
+        android:label="WeatherDetailFragment" >
+        <argument
+            android:name="weather_select"
+            app:argType="com.example.weather_test.data.models.WeatherModel" />
+    </fragment>
+
+
+</navigation>
