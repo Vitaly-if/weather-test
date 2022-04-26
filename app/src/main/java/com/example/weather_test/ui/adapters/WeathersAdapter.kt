@@ -20,13 +20,15 @@ class WeathersAdapter(weathers: List<WeatherModel>, val presenter: WeatherListPr
         }
 
     inner class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
-        val textView: TextView
+        val textDateWeek: TextView
+        val textDate: TextView
         val textTempMax: TextView
         val textTempMin: TextView
         val cloudinessImg: ImageView
 
         init {
-            textView = itemView.findViewById(R.id.text_date)
+            textDateWeek = itemView.findViewById(R.id.text_date_of_week)
+            textDate = itemView.findViewById(R.id.text_date)
             textTempMax = itemView.findViewById(R.id.text_temperature_max)
             textTempMin = itemView.findViewById(R.id.text_temperature_min)
             cloudinessImg = itemView.findViewById(R.id.cloudinessImg)
@@ -34,7 +36,8 @@ class WeathersAdapter(weathers: List<WeatherModel>, val presenter: WeatherListPr
 
         fun bindView(position: Int) {
 
-            textView.text = getPeriodDay(weathers[position].forecastHour)
+            textDateWeek.text = getPeriodDay(weathers[position].forecastHour)
+            textDate.text = "${weathers[position].forecastDay} ${getMonthText(weathers[position].forecastMonth)}"
             textTempMax.text = "${weathers[position].temperatureMax}°"
             textTempMin.text = "${weathers[position].temperatureMin}°"
             cloudinessImg.setImageResource(getCloudImg(weathers[position].phenomenaCloud))

@@ -36,7 +36,6 @@ class WeatherListFragment: MvpAppCompatFragment(), WeatherListView {
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?
     ): View? {
-        Log.i(ContentValues.TAG, "Загрузка фрагмента1")
         return inflater.inflate(R.layout.fragment_weather_list, container, false)
     }
 

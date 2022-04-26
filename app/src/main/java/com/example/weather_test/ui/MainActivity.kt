@@ -16,7 +16,6 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_container)
-        Log.i(ContentValues.TAG, "Загрузка активити")
        val navHostFragment =
        supportFragmentManager.findFragmentById(R.id.nav_host_fragment) as NavHostFragment
         val navController = navHostFragment.navController
@@ -43,7 +42,6 @@ class MainActivity : AppCompatActivity() {
         }
         override fun onSupportNavigateUp(): Boolean {
             val navController = this.findNavController(R.id.nav_host_fragment)
-            Log.i(ContentValues.TAG, "НАвигация")
             return navController.navigateUp()
 
     }
