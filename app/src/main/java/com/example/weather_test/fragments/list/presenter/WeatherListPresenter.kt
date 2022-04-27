@@ -1,9 +1,9 @@
-package com.example.weather_test.mvp.presenter
+package com.example.weather_test.fragments.list.presenter
 
 import com.example.weather_test.R
-import com.example.weather_test.data.IWeatherRepository
-import com.example.weather_test.data.models.WeatherModel
-import com.example.weather_test.mvp.view.WeatherListView
+import com.example.weather_test.domain.repository.IWeatherRepository
+import com.example.weather_test.domain.data.WeatherModel
+import com.example.weather_test.fragments.list.view.WeatherListView
 import moxy.InjectViewState
 import moxy.MvpPresenter
 

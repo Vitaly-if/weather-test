@@ -1,8 +1,6 @@
-package com.example.weather_test.ui
+package com.example.weather_test.fragments.list.ui
 
-import android.content.ContentValues
 import android.os.Bundle
-import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -10,12 +8,12 @@ import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
 
 import com.example.weather_test.R
-import com.example.weather_test.data.WeatherRepository
-import com.example.weather_test.data.models.WeatherModel
-import com.example.weather_test.mvp.presenter.WeatherListPresenter
-import com.example.weather_test.mvp.view.WeatherListView
-import com.example.weather_test.ui.adapters.WeathersAdapter
-import com.example.weather_test.ui.utils.showSnackBar
+import com.example.weather_test.domain.repository.WeatherRepository
+import com.example.weather_test.domain.data.WeatherModel
+import com.example.weather_test.fragments.list.presenter.WeatherListPresenter
+import com.example.weather_test.fragments.list.view.WeatherListView
+import com.example.weather_test.fragments.list.adapters.WeathersAdapter
+import com.example.weather_test.utils.showSnackBar
 import kotlinx.android.synthetic.main.fragment_weather_list.*
 import moxy.MvpAppCompatFragment
 import moxy.presenter.InjectPresenter

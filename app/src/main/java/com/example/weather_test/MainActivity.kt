@@ -1,4 +1,4 @@
-package com.example.weather_test.ui
+package com.example.weather_test
 
 import android.content.ContentValues
 import androidx.appcompat.app.AppCompatActivity
@@ -26,9 +26,11 @@ class MainActivity : AppCompatActivity() {
 
         navController.addOnDestinationChangedListener { _, destination: NavDestination, _ ->
             val toolBar = supportActionBar ?: return@addOnDestinationChangedListener
+            toolBar.setTitle(R.string.app_name)
             when (destination.id) {
                 R.id.weatherListFragment -> {
-                    toolBar.setDisplayShowTitleEnabled(false)
+                    toolBar.setDisplayShowTitleEnabled(true)
+                    toolBar.setTitle(R.string.app_name)
                     toolBar.setDisplayHomeAsUpEnabled(false)
                 }
                 else -> {

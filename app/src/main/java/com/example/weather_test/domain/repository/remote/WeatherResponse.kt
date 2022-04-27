@@ -1,4 +1,4 @@
-package com.example.weather_test.data.remote
+package com.example.weather_test.domain.repository.remote
 
 import org.simpleframework.xml.Attribute
 import org.simpleframework.xml.Element

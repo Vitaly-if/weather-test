@@ -1,4 +1,4 @@
-package com.example.weather_test.ui.adapters
+package com.example.weather_test.fragments.list.adapters
 
 import android.view.LayoutInflater
 import android.view.View
@@ -7,8 +7,8 @@ import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.example.weather_test.R
-import com.example.weather_test.data.models.WeatherModel
-import com.example.weather_test.mvp.presenter.WeatherListPresenter
+import com.example.weather_test.domain.data.WeatherModel
+import com.example.weather_test.fragments.list.presenter.WeatherListPresenter
 
 class WeathersAdapter(weathers: List<WeatherModel>, val presenter: WeatherListPresenter) :
     RecyclerView.Adapter<WeathersAdapter.ViewHolder>() {
