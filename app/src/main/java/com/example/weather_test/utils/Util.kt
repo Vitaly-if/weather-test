@@ -1,4 +1,4 @@
-package com.example.weather_test.ui.adapters
+package com.example.weather_test.fragments.list.adapters
 
 import com.example.weather_test.R
 

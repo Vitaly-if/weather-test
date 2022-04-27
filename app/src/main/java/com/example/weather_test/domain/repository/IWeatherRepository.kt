@@ -1,12 +1,10 @@
-package com.example.weather_test.data
+package com.example.weather_test.domain.repository
 
-import com.example.weather_test.data.models.WeatherModel
+import com.example.weather_test.domain.data.WeatherModel
 
 interface IWeatherRepository {
 
     fun loadWeathers(forceUpdate: Boolean, callback: LoadWeatherCallback)
-
-    //fun loadMovie(callback: LoadMovieCallback)
 
     interface LoadWeatherCallback {
         fun onWeatherLoaded(loadedWeatherList: List<WeatherModel>)

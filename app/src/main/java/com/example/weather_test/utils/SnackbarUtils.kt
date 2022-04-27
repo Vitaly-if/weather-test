@@ -1,4 +1,4 @@
-package com.example.weather_test.ui.utils
+package com.example.weather_test.utils
 
 import android.view.View
 import com.google.android.material.snackbar.Snackbar

@@ -1,4 +1,4 @@
-package com.example.weather_test.data.models
+package com.example.weather_test.domain.data
 
 import android.os.Parcel
 import android.os.Parcelable
@@ -76,13 +76,10 @@ class WeatherModel : Parcelable {
         this.forecastHour = forecastHour
         this.phenomenaCloud = phenomenaCloud
         this.phenomenaPrecip = phenomenaPrecip
-        this.pressureMax = when (pressureMax.toInt()) {
-            in 1..100 -> "+ $pressureMax"
-            else -> pressureMax
-        }
+        this.pressureMax = pressureMax
         this.pressureMin = pressureMin
         this.temperatureMax = when (temperatureMax.toInt()) {
-            in 1..100 -> "+ g$temperatureMax"
+            in 1..100 -> "+$temperatureMax"
             else -> temperatureMax
         }
         this.temperatureMin = when (temperatureMin.toInt()) {

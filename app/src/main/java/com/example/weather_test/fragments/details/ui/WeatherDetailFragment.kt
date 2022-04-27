@@ -1,15 +1,17 @@
-package com.example.weather_test.ui
+package com.example.weather_test.fragments.details.ui
 
+import android.content.ContentValues.TAG
 import android.os.Bundle
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.navigation.fragment.navArgs
 import com.example.weather_test.R
-import com.example.weather_test.data.models.WeatherModel
-import com.example.weather_test.mvp.presenter.WeatherDetailPresenter
-import com.example.weather_test.mvp.view.WeatherDetailView
-import com.example.weather_test.ui.adapters.*
+import com.example.weather_test.domain.data.WeatherModel
+import com.example.weather_test.fragments.details.presenter.WeatherDetailPresenter
+import com.example.weather_test.fragments.details.view.WeatherDetailView
+import com.example.weather_test.fragments.list.adapters.*
 import kotlinx.android.synthetic.main.fragment_weather_detail.*
 import moxy.MvpAppCompatFragment
 import moxy.presenter.InjectPresenter

@@ -1,7 +1,7 @@
-package com.example.weather_test.mvp.presenter
+package com.example.weather_test.fragments.details.presenter
 
-import com.example.weather_test.data.models.WeatherModel
-import com.example.weather_test.mvp.view.WeatherDetailView
+import com.example.weather_test.domain.data.WeatherModel
+import com.example.weather_test.fragments.details.view.WeatherDetailView
 import moxy.InjectViewState
 import moxy.MvpPresenter
 
