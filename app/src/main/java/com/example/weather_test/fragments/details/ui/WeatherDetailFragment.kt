@@ -1,14 +1,12 @@
 package com.example.weather_test.fragments.details.ui
 
-import android.content.ContentValues.TAG
 import android.os.Bundle
-import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.navigation.fragment.navArgs
 import com.example.weather_test.R
-import com.example.weather_test.domain.data.WeatherModel
+import com.example.weather_test.models.WeatherModel
 import com.example.weather_test.fragments.details.presenter.WeatherDetailPresenter
 import com.example.weather_test.fragments.details.view.WeatherDetailView
 import com.example.weather_test.fragments.list.adapters.*
@@ -37,7 +35,7 @@ class WeatherDetailFragment : MvpAppCompatFragment(), WeatherDetailView {
         return inflater.inflate(R.layout.fragment_weather_detail, container, false)
     }
 
-    override fun onWeatherLoaded(weather: WeatherModel) {
+    override fun showWeather(weather: WeatherModel) {
         textPeriodDay.text = getPeriodDay(weather.forecastHour)
         textMonth.text =
             getString(R.string.text_month, weather.forecastDay, getMonthText(weather.forecastMonth))

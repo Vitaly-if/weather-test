@@ -1,6 +1,6 @@
 package com.example.weather_test.fragments.details.presenter
 
-import com.example.weather_test.domain.data.WeatherModel
+import com.example.weather_test.models.WeatherModel
 import com.example.weather_test.fragments.details.view.WeatherDetailView
 import moxy.InjectViewState
 import moxy.MvpPresenter
@@ -19,7 +19,7 @@ class WeatherDetailPresenter(private val selectWeather: WeatherModel) : MvpPrese
     private fun loadWeather() {
         weather = selectWeather
 
-        viewState.onWeatherLoaded(weather)
+        viewState.showWeather(weather)
     }
 
 }

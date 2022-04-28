@@ -1,8 +1,7 @@
 package com.example.weather_test.domain.repository
 
 import com.example.weather_test.domain.data.MmWeatherRootResponseDTO
-import com.example.weather_test.domain.data.WeatherModel
-import com.example.weather_test.domain.repository.remote.MMWEATHER
+import com.example.weather_test.models.WeatherModel
 import com.example.weather_test.domain.repository.remote.WeatherApi
 import com.example.weather_test.domain.repository.remote.WeatherApiInterface
 import retrofit2.Call

@@ -7,7 +7,7 @@ import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.example.weather_test.R
-import com.example.weather_test.domain.data.WeatherModel
+import com.example.weather_test.models.WeatherModel
 import com.example.weather_test.fragments.list.presenter.WeatherListPresenter
 
 class WeathersAdapter(weathers: List<WeatherModel>, val presenter: WeatherListPresenter) :

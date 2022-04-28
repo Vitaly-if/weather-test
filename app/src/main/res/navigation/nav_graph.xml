@@ -23,7 +23,7 @@
         android:label="WeatherDetailFragment" >
         <argument
             android:name="weather_select"
-            app:argType="com.example.weather_test.domain.data.WeatherModel" />
+            app:argType="com.example.weather_test.models.WeatherModel" />
     </fragment>
 
 
