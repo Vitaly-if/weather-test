@@ -1,4 +1,4 @@
-package com.example.weather_test.domain.data
+package com.example.weather_test.models
 
 import android.os.Parcel
 import android.os.Parcelable

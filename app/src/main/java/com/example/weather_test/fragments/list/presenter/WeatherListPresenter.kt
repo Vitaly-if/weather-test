@@ -2,7 +2,7 @@ package com.example.weather_test.fragments.list.presenter
 
 import com.example.weather_test.R
 import com.example.weather_test.domain.repository.IWeatherRepository
-import com.example.weather_test.domain.data.WeatherModel
+import com.example.weather_test.models.WeatherModel
 import com.example.weather_test.fragments.list.view.WeatherListView
 import moxy.InjectViewState
 import moxy.MvpPresenter

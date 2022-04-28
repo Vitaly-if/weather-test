@@ -1,6 +1,6 @@
 package com.example.weather_test.domain.repository
 
-import com.example.weather_test.domain.data.WeatherModel
+import com.example.weather_test.models.WeatherModel
 
 interface IWeatherRepository {
 

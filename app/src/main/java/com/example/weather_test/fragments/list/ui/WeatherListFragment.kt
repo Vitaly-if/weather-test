@@ -9,7 +9,7 @@ import androidx.recyclerview.widget.LinearLayoutManager
 
 import com.example.weather_test.R
 import com.example.weather_test.domain.repository.WeatherRepository
-import com.example.weather_test.domain.data.WeatherModel
+import com.example.weather_test.models.WeatherModel
 import com.example.weather_test.fragments.list.presenter.WeatherListPresenter
 import com.example.weather_test.fragments.list.view.WeatherListView
 import com.example.weather_test.fragments.list.adapters.WeathersAdapter
