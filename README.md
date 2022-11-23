@@ -1,4 +1,5 @@
 # weather-test
+<img src="https://github.com/Vitaly-if/weather-test/blob/main/misc/untitledwt.gif" width="300" height="600" />
 # Тестовое задание
 Тестовое задание состоит в написании приложения для вывода прогноза погоды по г.
 Новосибирск с использованием открытых данных сервера gismeteo.ru.
@@ -58,7 +59,7 @@ https://www.google.com/design/spec/material-design/introduction.html
 * Для экранов 1, 2 используйте одну и ту же Activity для фрагментов.
 * Экран на 3 является отдельной Activity.
 * Для загрузки данных в фоне удобно использовать класс, наследуемый от
-AsyncTask<Parameter, Progress, Result>.
+AsyncTask.
 Для продвинутых:
 Было бы круто использовать injection dependency, reactive java, retrofit и архитектурные
 ухищрения
